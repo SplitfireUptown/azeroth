@@ -3,9 +3,7 @@
 慢sql分析
 
 - 基于MySQL自带慢sql统计功能输出的slow-query.log分析
-- 使用教程：https://wiki.haizhi.com/pages/viewpage.action?pageId=83895026
-- 编译
-  - 在入口main.go同级目录下执行
-  - ``CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o azeroth_linux main.go`` (linux运行环境)
-  - ``CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o azeroth_mac main.go`` (mac运行环境)
-  - ``CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o azeroth_windows.exe main.go`` (windows运行环境)
+- 自行填写要分析的log路径，需要放到执行文件的当前路径下
+- ![image](https://user-images.githubusercontent.com/39265179/179751527-8b7da438-e545-4c18-8e66-4bc191114f3e.png)
+- ![image](https://user-images.githubusercontent.com/39265179/179751555-1901ec7a-cd3e-4ca5-b0db-9330e45d6d84.png)
+- ![image](https://user-images.githubusercontent.com/39265179/179751588-6ee58935-8a4d-4a8a-b844-92e0564da5e4.png)
