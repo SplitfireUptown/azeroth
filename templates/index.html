@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SlowSQL Analysis Plat</title>
+
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+<!--    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>-->
+    <script src="/static/layui/layui.js"></script>
+</head>
+<body class="layui-layout-body" style="overflow: hidden">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">SQL慢查询服务</div>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item">
+                    <a href="/data_list" target="myFrame">SQL分析</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body" >
+        <!-- 内容主体区域 -->
+        <iframe  frameborder="0" height="100%" width="100%" name="myFrame">
+
+        </iframe>
+    </div>
+
+</div>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
+</body>
+</html>
