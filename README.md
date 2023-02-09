@@ -1,6 +1,6 @@
 # azeroth
 
-慢sql分析
+慢sql分析，抽象sql变量为？聚合统计
 
 - 基于MySQL自带慢sql统计功能输出的slow-query.log分析
 - 自行填写要分析的log路径，需要放到执行文件的当前路径下
